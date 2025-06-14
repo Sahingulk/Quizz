@@ -1,0 +1,182 @@
+body {
+    background: #F5F7FB !important;
+}
+
+.card {
+    border-radius: 1.5rem !important;
+    box-shadow: 0 4px 32px 0 rgba(63, 81, 181, 0.10);
+}
+
+.btn-primary {
+    background-color: #3F51B5 !important;
+    border-color: #3F51B5 !important;
+}
+
+.btn-outline-primary {
+    color: #3F51B5 !important;
+    border-color: #3F51B5 !important;
+}
+
+.btn-outline-primary:hover {
+    background-color: #3F51B5 !important;
+    color: #fff !important;
+}
+
+input:focus,
+.form-control:focus {
+    border-color: #3F51B5;
+    box-shadow: 0 0 0 0.2rem rgba(63, 81, 181, 0.10);
+}
+
+/* --- Renk Paleti --- */
+:root {
+    --main-gradient: linear-gradient(90deg, #2f42f2 0%, #57baf3 100%);
+    --accent-gradient: linear-gradient(90deg, #43e97b 0%, #38f9d7 100%);
+    --primary: #57baf3;
+    --secondary: #F9A826;
+    --light-bg: #f7f7ff;
+    --dark-text: #23235b;
+    --soft-shadow: 0 8px 32px rgba(44, 37, 90, 0.15);
+}
+
+/* --- Genel --- */
+body.bg-light {
+    background: linear-gradient(120deg, #d1c4e9 0%, #f8bbd0 100%) !important;
+    min-height: 100vh;
+}
+
+.card {
+    border: 0;
+    box-shadow: var(--soft-shadow) !important;
+    background: rgba(255, 255, 255, 0.97) !important;
+    border-radius: 2rem !important;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.card:hover {
+    transform: translateY(-4px) scale(1.01);
+    box-shadow: 0 16px 40px rgba(44, 37, 90, 0.22);
+}
+
+h2,
+h3,
+h4,
+h5 {
+    background: var(--main-gradient);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: bold;
+}
+
+.btn-primary,
+.btn-success {
+    background: var(--accent-gradient) !important;
+    border: none !important;
+    color: #fff !important;
+    font-weight: 600;
+    letter-spacing: 1px;
+    border-radius: 1.5rem;
+    box-shadow: 0 3px 10px #385bf952;
+    transition: background 0.3s, box-shadow 0.2s;
+}
+
+.btn-primary:hover,
+.btn-success:hover {
+    background: var(--main-gradient) !important;
+    box-shadow: 0 6px 20px #7b2ff299;
+}
+
+.btn-secondary {
+    background: var(--main-gradient) !important;
+    border: none !important;
+    color: #fff !important;
+    border-radius: 1.5rem;
+}
+
+.btn-secondary:hover {
+    background: var(--accent-gradient) !important;
+}
+
+input.form-control,
+textarea.form-control {
+    border-radius: 1rem !important;
+    border: 1.5px solid #ede7f6;
+    box-shadow: none;
+    font-size: 1rem;
+}
+
+ul.list-group {
+    border-radius: 1rem !important;
+    overflow: hidden;
+}
+
+.list-group-item {
+    border: none !important;
+    background: linear-gradient(90deg, #f7fafc 60%, #e1bee7 100%);
+    color: var(--dark-text) !important;
+    font-weight: 500;
+    font-size: 1.05rem;
+}
+
+.modal-content {
+    border-radius: 1.5rem;
+    background: #fff;
+}
+
+/* --- Skor Tablosu için --- */
+#scoreboard .score-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 1.5rem;
+    margin-bottom: 0.75rem;
+    border-radius: 1rem;
+    background: linear-gradient(90deg, #ffe082 60%, #b2ff59 100%);
+    box-shadow: 0 2px 8px #fbc02d22;
+    font-size: 1.15rem;
+    font-weight: bold;
+}
+
+#scoreboard .score-row .rank {
+    font-size: 1.5rem;
+    margin-right: 0.7rem;
+}
+
+#scoreboard .score-row .username {
+    flex: 1;
+    color: #23235b;
+}
+
+#scoreboard .score-row .score {
+    font-size: 1.25rem;
+    color: #6C63FF;
+    font-weight: bold;
+}
+
+/* --- Dekoratif Dalgalar (örn. giriş sayfası) --- */
+body.bg-light::before {
+    content: "";
+    position: fixed;
+    z-index: -1;
+    left: 0;
+    top: 0;
+    right: 0;
+    height: 22vh;
+    background: var(--main-gradient);
+    border-radius: 0 0 60% 60% / 0 0 20% 20%;
+    opacity: 0.10;
+}
+
+@media (max-width: 576px) {
+
+    .card,
+    .modal-content {
+        border-radius: 1.2rem !important;
+        padding: 1rem !important;
+    }
+
+    .btn {
+        font-size: 1rem;
+    }
+}

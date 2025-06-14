@@ -1,0 +1,36 @@
+
+
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quizz | Yöneticinin Oyun Ekranı</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="src/css/style.css" rel="stylesheet" />
+</head>
+
+<body class="bg-light">
+    <div class="container d-flex align-items-center justify-content-center min-vh-100">
+        <div class="card p-4 rounded-4 shadow-lg" style="max-width:600px;width:100%;">
+            <h3 class="mb-3 text-center" style="color:#3F51B5;">Canlı Quiz Yönetimi</h3>
+            <div id="waiting-area" class="mb-3">
+                <!-- <div class="mb-2 fw-bold">Katılımcılar:</div>
+                <ul id="player-list" class="list-group mb-2"></ul> -->
+                <button id="startQuizBtn" class="btn btn-success w-100">Oyunu Başlat</button>
+                <div class="text-muted small mt-2">Oyuncular katıldıktan sonra başlatabilirsin.</div>
+            </div>
+            <div id="game-area" style="display:none;">
+                <div id="question-area" class="mb-3"></div>
+                <button class="btn btn-primary w-100" id="next-btn">Sonraki Soru</button>
+                <div id="timer" class="text-end text-muted"></div>
+            </div>
+            <div id="answer-feedback" class="text-center mb-2"></div>
+        </div>
+    </div>
+    <script src="https://cdn.socket.io/4.7.5/socket.io.min.js"></script>
+    <script src="src/js/host-game.js"></script>
+</body>
+
+</html>
