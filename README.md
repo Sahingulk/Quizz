@@ -21,12 +21,6 @@ Kullanıcılar quizler oluşturabilir, canlı oyun başlatabilir, arkadaşların
 
 ---
 
-## Ekran Görüntüleri
-
-> Örnek:  
-> ![Giriş Ekranı](docs/screens/login.png)  
-> ![Oyun Ekranı](docs/screens/game.png)  
-> ![Skor Tablosu](docs/screens/score.png)
 
 ---
 
